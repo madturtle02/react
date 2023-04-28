@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import Greet from './components/Greet';
+import Welcome from './components/Welcome';
+import Message from './components/Message'
+import Counter from './components/Counter'
+import Recap from './components/Recap'
+import ParentComponent from './components/ParentComponent'
+import ConditionalRendering from './components/ConditionalRendering'
+import ListRendering from './components/ListRendering'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+
+        <ListRendering/>
+
+        {/* <ConditionalRendering/>
+        <ParentComponent/>
+        <Message/>
+        <Counter> </Counter>
+        <Recap/>
+        <Greet name="rajib" nickname="winner"> 
+        <h1>this person is genuine</h1>
+        </Greet>
+        <Welcome name="zenith" nickname="geek"/> */}
+      </div>
+    );
+  }
 }
 
 export default App;
