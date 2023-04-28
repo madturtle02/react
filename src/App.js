@@ -7,6 +7,10 @@ import Recap from './components/Recap'
 import ParentComponent from './components/ParentComponent'
 import ConditionalRendering from './components/ConditionalRendering'
 import ListRendering from './components/ListRendering'
+import Styles from './components/Styles'
+import Inline from './components/Inline'
+import './components/appStyles.css'
+import styles from './components/appStyles.module.css';
 
 
 class App extends Component {
@@ -14,7 +18,14 @@ class App extends Component {
     return (
       <div className="App">
 
-        <ListRendering/>
+        <h1 className='error'>Error</h1>
+        <h1 className={styles.success}>Success</h1>
+
+        <Inline/>
+
+        {/* <Styles primary = {true}/> */}
+
+        {/* <ListRendering/> */}
 
         {/* <ConditionalRendering/>
         <ParentComponent/>
